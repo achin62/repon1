@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .container {
+        padding-left: 150px;
+        padding-right: 150px;
+        margin: auto;
+    }
+
+    .header {
+        float: left;
+        width: 100%;
+    }
+
+    .container img {
+        width: 100%;
+    }
+
+    .navbar {
+        background-color: rgb(6, 69, 243);
+        display: block;
+    }
+
+    .navbar a {
+        text-decoration: none;
+        padding: 12px 16px;
+        text-align: center;
+        color: white;
+        font-size: 20px;
+    }
+
+    .navbar .nav-small a {
+        float: left;
+
+    }
+
+    .navbar .icon {
+        display: none;
+    }
+
+    @media screen and (max-width:1023px) {
+        .nav-small {
+            display: none;
+        }
+
+        .nav-small a {
+            width: 100%;
+            display: block;
+            text-align: left;
+        }
+
+        .nav-small a:first-child {
+            display: none;
+        }
+
+        .navbar .icon {
+            display: block;
+            float: right;
+        }
+
+        .repon {
+            display: block !important;
+        }
+    }
+
+    /* -------- */
+    .content {
+        display: flex;
+        flex-direction: row;
+        padding-top: 20px;
+    }
+
+    .text img {
+        padding: 20px 80px 0;
+    }
+
+    .text1 {
+        margin-bottom: 20px;
+    }
+
+    @media screen and (max-width: 1023px) {
+        .text {
+            width: 100%;
+        }
+
+        .text img {
+            padding-left: 0;
+            width: calc(100%-5px);
+        }
+
+        .text1 h1 {
+            color: red;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .container {
+            padding: 1px;
+        }
+
+        .text img {
+            width: 100%;
+            padding: 20px;
+        }
+
+        .text1 h1 {
+            color: red;
+            font-size: 20px;
+        }
+
+        .text1 p {
+            color: blue;
+            font-size: 15px;
+        }
+    }
+</style>
+</style>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="./header.jpg" alt="">
+        </div>
+        <div class="navbar header">
+            <a href="#" class="icon">&#9776</a>
+            <div class="nav-small">
+                <a href="#" class="active">trang chủ</a>
+                <a href="#">giới thiệu</a>
+                <a href="#">sản phẩm </a>
+                <a href="#">diễn đàn</a>
+            </div>
+        </div>
+    </div>
+    <div class="content container">
+        <div class="text">
+            <img src="./photoofthemonth.jpg" alt="">
+            <img src="./bikeofthemonth.jpg" alt="">
+        </div>
+        <div class="text">
+            <div class="text1">
+                <h1>xe đạp địa hình</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum fuga atque minus accusamus nulla
+                    esse ab corrupti ipsa magni laboriosam, libero nesciunt impedit? Error aliquid nulla quas
+                    possimus incidunt praesentium.</p>
+            </div>
+            <div class="text1">
+                <h1>xe đạp địa hình</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum fuga atque minus accusamus nulla
+                    esse ab corrupti ipsa magni laboriosam, libero nesciunt impedit? Error aliquid nulla quas
+                    possimus incidunt praesentium.</p>
+            </div>
+            <div class="text1">
+                <h1>xe đạp địa hình</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum fuga atque minus accusamus nulla
+                    esse ab corrupti ipsa magni laboriosam, libero nesciunt impedit? Error aliquid nulla quas
+                    possimus incidunt praesentium.</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer container">
+        <img src="./footer.jpg" alt="dá">
+    </div>
+</body>
+<script>
+    var btn = document.querySelector('.icon');
+    var list = document.getElementsByClassName('nav-small')[0];
+    btn.onclick = function () {
+        list.classList.toggle('repon');
+    }
+</script>
+
+</html>
