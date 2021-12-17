@@ -183,3 +183,98 @@
 </script>
 
 </html>
+<!-- 
+
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        margin: auto 100px;
+    }
+
+    .bg img {
+        width: 100%;
+    }
+
+    .nav {
+        background-color: blue;
+        overflow: hidden;
+        color: white;
+    }
+
+    .nav ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav ul li {
+        padding: 10px 20px;
+    }
+
+    .nav-small li {
+        float: left;
+        list-style: none;
+    }
+
+    .icon {
+        float: right;
+        color: red;
+        padding: 10px 20px;
+        text-decoration: none;
+        display: none;
+    }
+
+    @media screen and (max-width:623px) {
+        .icon {
+            display: block;
+            float: none;
+            text-align: right;
+        }
+
+        .nav-small {
+            display: none;
+        }
+
+        .nav-small li {
+            float: none;
+        }
+
+        .repon {
+            display: block;
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="bg">
+            <img src="./header.jpg" alt="">
+        </div>
+        <div class="nav">
+            <a href="#" class="icon">=</a>
+            <ul class="nav-small">
+                <li>trang chủ</li>
+                <li>tin tức </li>
+                <li>tin tức </li>
+                <li>tin tức </li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script>
+    var btn = document.querySelector('.icon');
+    var list = document.getElementsByClassName('nav-small')[0];
+    btn.onclick = function () {
+        list.classList.toggle('repon');
+    }
+</script>
+
+</html>
+ -->
